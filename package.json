@@ -1,6 +1,6 @@
 {
   "name": "trimap_config_loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Loads configuration data from database(s) into a tri-map data structure for rapid lookup and O(1) complexity upon loading",
   "main": "mm-common-config.js",
   "scripts": {
