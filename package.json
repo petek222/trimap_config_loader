@@ -1,6 +1,6 @@
 {
   "name": "mm-common-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loads config data from specified db into tri-map data structure",
   "main": "index.js",
   "scripts": {
