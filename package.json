@@ -1,0 +1,19 @@
+{
+  "name": "trimap_config_loader",
+  "version": "1.0.0",
+  "description": "Module for loading database configuration data in a trimap data structure for rapid, constant time lookup",
+  "main": "mm-commom-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/petek222/trimap_config_loader.git"
+  },
+  "author": "Peter Koncelik",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.1",
+    "winston": "^3.2.1"
+  }
+}
