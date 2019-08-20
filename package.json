@@ -1,14 +1,14 @@
 {
-  "name": "mm-common-config",
-  "version": "1.0.1",
-  "description": "Loads config data from specified db into tri-map data structure",
-  "main": "index.js",
+  "name": "trimap_config_loader",
+  "version": "1.0.0",
+  "description": "Loads configuration data from database(s) into a tri-map data structure for rapid lookup and O(1) complexity upon loading",
+  "main": "mm-common-config.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://mtdproducts.visualstudio.com/MowMoney/_git/mm-common-config"
+    "url": "https://github.com/petek222/trimap_config_loader.git"
   },
   "author": "Peter Koncelik",
   "license": "ISC",
