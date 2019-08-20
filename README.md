@@ -3,8 +3,6 @@ NPM node-module package written in node-js with Azure SQL, MySQL, and Oracle Db'
 
 Example of production use is currently within config-helper.js in order-service-client at MTD Products and within MTD_Order_Lookup application to load and manipulate specific db config data.
 
-Github: https://github.com/petek222/config_loader.git
-
 # Files
 File(s): mm-common-config.js || DB Table: db_config.json (provide connectivity information)
 
