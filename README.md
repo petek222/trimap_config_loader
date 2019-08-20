@@ -3,12 +3,14 @@ NPM node-module package written in node-js with Azure SQL, MySQL, and Oracle Db'
 
 Example of production use is currently within config-helper.js in order-service-client at MTD Products and within MTD_Order_Lookup application to load and manipulate specific db config data.
 
+Github: https://github.com/petek222/config_loader.git
+
 # Files
 File(s): mm-common-config.js || DB Table: db_config.json (provide connectivity information)
 
 # Getting Started
 TODO: To bring the package in, use npm install trimap_config_loader
-      GITLINK = https://github.com/petek222/config_loader.git
+
 1. Require in another file as 'loader' or any other name. ex. const loader = require('path/mm-common-config/mm-common-config');
 2. Syntax: loader.configLoader(service_name, dbConfig) for any given service_name and db_config parameters (ex. order-service-client and azureDBConfig)
 3. Tri-map data structure is returned, sorted as: Map {config_type => Map {config_group => Map {config_item_key => config_item_value}}}
@@ -30,10 +32,10 @@ TODO: To bring the package in, use npm install trimap_config_loader
 Each of the fields may be multiple keys/values in the map structure. Note that config_type and config_group need not exist in the database, but config_item_name and config_item_value are necessary fields for the module to function correctly.
 
 # Build and Test
-TODO: Mocha/Chai testing frameworks deployed backend, tests housed in config-loader-test.js and config-helper-test.js within order-service-client repo. 
+TODO: Mocha/Chai testing frameworks deployed backend, tests housed within seperate order-service-client repo. 
 
-Module mm-common-config is currently Mocha - Chai compatible
+Module trimap-config-loader is currently Mocha - Chai compatible
 
 # Contribute
-TODO: Increase readability : Increase flexibility in terms of service names/columns, and ensure that the module is mySQL compatible
+TODO: Increase readability : Increase flexibility in terms of service names/columns, and ensure that the module is MySQL compatible
 
