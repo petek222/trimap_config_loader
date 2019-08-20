@@ -11,7 +11,7 @@ File(s): mm-common-config.js || DB Table: db_config.json (provide connectivity i
 # Getting Started
 TODO: To bring the package in, use npm install trimap_config_loader
 
-1. Require in another file as 'loader' or any other name. ex. const loader = require('path/mm-common-config/mm-common-config');
+1. Require in another file as 'loader' or any other name. ex. const loader = require('path/trimap-config-loader/trimap-config-loader');
 2. Syntax: loader.configLoader(service_name, dbConfig) for any given service_name and db_config parameters (ex. order-service-client and azureDBConfig)
 3. Tri-map data structure is returned, sorted as: Map {config_type => Map {config_group => Map {config_item_key => config_item_value}}}
 4. Lookups on the map are just double get calls. If the desired data lives in a db without a specified type or group, both are assigned the default param of 'general' when loaded
@@ -37,5 +37,7 @@ TODO: Mocha/Chai testing frameworks deployed backend, tests housed within sepera
 Module trimap-config-loader is currently Mocha - Chai compatible
 
 # Contribute
-TODO: Increase readability : Increase flexibility in terms of service names/columns, and ensure that the module is MySQL compatible
+TODO: 
+1. Increase flexibility in terms of service names/columns, and ensure that the module is MySQL compatible
+2. Fix require issues (ie. update so path to module itself is not a required specification)
 
