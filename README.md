@@ -2,12 +2,12 @@
 NPM node-module package written in node-js with Azure SQL, MySQL, and Oracle Db's that provides database loading funtionality in a high-speed, user-friendly tri-map data storage structure without the need of queries at runtime. Loads all configuration data stored in specified db into a tri-map structure. This loaded config can then be used easily in a series of map lookups. No runtime queries are necessary, so incredibly high speed is maintained after initial load. 
 
 # Files
-File(s): mm-common-config.js || DB Table: service_client_config (provide connectivity information)
+File(s): mm-common-config.js || DB Table: config_table (provide connectivity information)
 
 # Getting Started
 TODO: To bring the package in, use npm install git+GITLINK (the git+ flavor is required for correct installation)
       GITLINK = https://github.com/petek222/config_loader.git
-1. Require in another file as 'loader' or any other name. ex. const loader = require('path/mm-common-config/mm-common-config');
+1. Require in another file as 'loader' or any other name. ex. const loader = require('path/src/index.js');
 2. Syntax: loader.configLoader(service_name, dbConfig) for any given service_name and db_config parameters (ex. order-service-client and azureDBConfig)
 3. Tri-map data structure is returned, sorted as: Map {config_type => Map {config_group => Map {config_item_key => config_item_value}}}
 4. Lookups on the map are just double get calls. If the desired data lives in a db without a specified type or group, both are assigned the default param of 'general' when loaded
@@ -30,7 +30,7 @@ Each of the fields may be multiple keys/values in the map structure. Note that c
 # Build and Test
 TODO: Mocha/Chai testing frameworks deployed backend, tests housed in config-loader-test.js and config-helper-test.js within order-service-client repo. 
 
-Module mm-common-config is currently Mocha - Chai compatible
+Module trimap_config_loader is currently Mocha - Chai compatible
 
 # Contribute
 TODO: Increase readability : See extensive comments for functionality breakdown
