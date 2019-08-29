@@ -2,7 +2,7 @@
 NPM node-module package written in node-js with Azure SQL, MySQL, and Oracle Db's that provides database loading funtionality in a high-speed, user-friendly tri-map data storage structure without the need of queries at runtime. Loads all configuration data stored in specified db into a tri-map structure. This loaded config can then be used easily in a series of map lookups. No runtime queries are necessary, so incredibly high speed is maintained after initial load. 
 
 # Files
-File(s): mm-common-config.js || DB Table: config_table (provide connectivity information)
+File(s): index.js || DB Table: config_table (provide connectivity information)
 
 # Getting Started
 TODO: To bring the package in, use npm install git+GITLINK (the git+ flavor is required for correct installation)
