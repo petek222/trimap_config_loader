@@ -1,6 +1,6 @@
 {
   "name": "trimap_config_loader",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "module for loading configuration data from a secure database",
   "main": "index.js",
   "scripts": {
