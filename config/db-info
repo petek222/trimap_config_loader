@@ -1,0 +1,4 @@
+Name: table_name
+Columns: id (filled by seq), service_name, config_type, config_group, config_item_name, config_item_value
+These column names are requisite for proper data loading.
+You can also go into the src and change the column names manually to fit your db.
