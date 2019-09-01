@@ -18,7 +18,7 @@ const sql = require('mssql');
 // Global accessibility does NOT extend to mocha/chai unit tests due to framework incompatibility
 // Brings entire config db into app: sorts into tri-map structure via 'in-reverse logic'. 
 // Getting/Accessing config data is left to the application using the module once config is in memory
-exports.configLoader = function(service_name, db_config) {
+exports.configLoader = function(service_name, db_config, db_table) {
     
     return new Promise((resolve, reject) => {
 
@@ -32,7 +32,7 @@ exports.configLoader = function(service_name, db_config) {
 
                     // You can modify these queries to grab your specific tables column names if need be 
                     req.input('service_name', sql.VarChar, service_name);
-                    req.query("select service_name, config_item_name, config_item_value, config_type, config_group from service_client_config where service_name = @service_name order by config_type, config_group", (err, result) => {
+                    req.query(`select service_name, config_item_name, config_item_value, config_type, config_group from ${db_table} where service_name = @service_name order by config_type, config_group`, (err, result) => {
 
                         // variables for readability
                         var myResult = result.recordset;
