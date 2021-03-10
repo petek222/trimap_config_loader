@@ -32,8 +32,3 @@ Each of the fields may be multiple keys/values in the map structure. Note that c
 Mocha/Chai testing frameworks deployed backend, tests housed in config-loader-test.js and config-helper-test.js within order-service-client repo. 
 
 Module trimap_config_loader is currently Mocha - Chai compatible
-
-# Contribute
-TODO: Increase readability : See extensive comments for functionality breakdown
-      Deploy module in desired areas, continue offloading config data to service_client_config.
-
